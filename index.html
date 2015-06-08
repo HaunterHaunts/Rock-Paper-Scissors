@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="Resources\rpsProgram.js"></script>
+    <script src="Resources\rpsEffects.js"></script>
+    <link rel="stylesheet" href="Resources\rps.css">
+    <title>Rocks, Papers, and Scissors</title>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <p id="heading">Rock, Paper, Scissors</p>
+            <p id="subheading">Click on a picture to make your choice.</p>
+        </div>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <input class="image img-responsive" type="image" src="Resources\rock.jpg" onclick="input('Rock')" />
+            </div>
+            <div class="col-sm-2">
+                <input class="image img-responsive" type="image" src="Resources\paper.jpg" onclick="input('Paper')" />
+            </div>
+            <div class="col-sm-2">
+                <input class="image img-responsive" type="image" src="Resources\scissors.jpg" onclick="input('Scissors')" />
+            </div>
+        </div>
+        <div class="row">
+            <ul class="list-inline">
+                <li class="stats" id="comp">Player vs. Computer</li>
+                <li class="stats" id="outcome">Outcome</li>
+                <li class="green stats" id="winCounter">Wins</li>
+                <li class="red stats" id="loseCounter">Losses</li>
+                <li class="blue stats" id="tieCounter">Ties</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
